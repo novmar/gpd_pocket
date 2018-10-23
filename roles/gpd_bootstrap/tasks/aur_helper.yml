@@ -1,6 +1,6 @@
 ---
 - name: create aur_builder user
-- user:
+  user:
     name: aur_builder
     group: wheel
 
