@@ -1,4 +1,4 @@
 ---
-- hosts: localhost
+- hosts: pocket
   roles:
     - gpd_bootstrap
