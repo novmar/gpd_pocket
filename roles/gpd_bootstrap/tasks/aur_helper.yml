@@ -1,4 +1,17 @@
 ---
+- name: create aur_builder user
+- user:
+    name: aur_builder
+    group: wheel
+
+
+- lineinfile:
+     path: /etc/sudoers.d/aur_builder-allow-to-sudo-pacman
+     state: present
+     line: "aur_builder ALL=(ALL) NOPASSWD: /usr/bin/pacman"
+     validate: /usr/sbin/visudo -cf %s
+     create: yes
+
 - name: clone ansible-aur.git
   git:
     repo: "https://github.com/kewlfft/ansible-aur.git"
@@ -8,6 +21,8 @@
   aur:
     name: ansible-aur-git
     use: makepkg
+  become: yes
+  become_user: aur_builder
 
 - name: delete cloned module ansible-aur
   file:
@@ -18,5 +33,7 @@
   aur:
     name: yay
     use: makepkg
+  become: yes
+  become_user: aur_builder
 
 
