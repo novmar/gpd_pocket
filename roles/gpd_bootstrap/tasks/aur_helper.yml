@@ -12,11 +12,6 @@
      validate: /usr/sbin/visudo -cf %s
      create: yes
 
-- name: clone ansible-aur.git
-  git:
-    repo: "https://github.com/kewlfft/ansible-aur.git"
-    dest: "~/.ansible/plugins/modules/aur"
-
 - name: install ansible-aur from aur
   aur:
     name: ansible-aur-git
