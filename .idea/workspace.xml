@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78d80f8b-fe38-4909-a522-77680dc65a3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gpd_pocket.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gpd_pocket.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/gpd_bootstrap/tasks/aur_helper.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roles/gpd_bootstrap/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/gpd_bootstrap/tasks/main.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,29 +22,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="yml" value="3" />
+          <entry key="yml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="YAML_EX" value="3" />
+          <entry key="YAML_EX" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="yml" value="78" />
+          <entry key="yml" value="491" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="YAML_EX" value="78" />
+          <entry key="YAML_EX" value="491" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gpd_pocket.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -53,10 +54,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/roles/gpd_bootstrap/tasks/aur_helper.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/roles/gpd_bootstrap/tasks/main.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -74,8 +84,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/roles/gpd_bootstrap/tasks/main.yml" />
         <option value="$PROJECT_DIR$/gpd_pocket.yml" />
+        <option value="$PROJECT_DIR$/roles/gpd_bootstrap/tasks/aur_helper.yml" />
+        <option value="$PROJECT_DIR$/roles/gpd_bootstrap/tasks/main.yml" />
       </list>
     </option>
   </component>
@@ -116,7 +127,19 @@
             </path>
             <path>
               <item name="gpd_pocket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gpd_pocket" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="gpd_bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gpd_pocket" type="b2602c69:ProjectViewProjectNode" />
               <item name="ansible-playbooks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gpd_pocket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ansible-playbooks" type="462c0819:PsiDirectoryNode" />
+              <item name="host_vars" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -190,20 +213,27 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/roles/gpd_bootstrap/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../xcroco/ansible-playbooks/ast-mysql.yml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/gpd_bootstrap/tasks/aur_helper.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gpd_pocket.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/gpd_bootstrap/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>

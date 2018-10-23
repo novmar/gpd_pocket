@@ -1,2 +1,3 @@
 ---
-- name: test
+- name: install aur helper
+  include: aur_helper.yml

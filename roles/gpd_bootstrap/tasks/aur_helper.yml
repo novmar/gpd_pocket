@@ -1,0 +1,22 @@
+---
+- name: clone ansible-aur.git
+  git:
+    repo: "https://github.com/kewlfft/ansible-aur.git"
+    dest: "~/.ansible/plugins/modules/aur"
+
+- name: install ansible-aur from aur
+  aur:
+    name: ansible-aur-git
+    use: makepkg
+
+- name: delete cloned module ansible-aur
+  file:
+    path: "~/.ansible/plugins/modules/aur"
+    state: absent
+
+- name: install yay
+  aur:
+    name: yay
+    use: makepkg
+
+
