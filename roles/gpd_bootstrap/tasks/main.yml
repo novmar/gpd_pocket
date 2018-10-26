@@ -1,3 +1,14 @@
 ---
 - name: install aur helper
   include: aur_helper.yml
+
+- name: update packages and cache
+  pacman:
+    update_cache: yes
+    upgrade: yes
+
+- name: install packages
+  pacman:
+    name: "{{ item }}"
+    state: latest
+  with_items: packages

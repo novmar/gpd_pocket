@@ -19,11 +19,6 @@
   become: yes
   become_user: aur_builder
 
-- name: delete cloned module ansible-aur
-  file:
-    path: "~/.ansible/plugins/modules/aur"
-    state: absent
-
 - name: install yay
   aur:
     name: yay
