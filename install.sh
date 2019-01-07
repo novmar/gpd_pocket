@@ -8,7 +8,7 @@ mount -o remount,size=2G /run/archiso/cowspace
 
 # then Prepare git
 
-pacman -Sy git
+pacman -Sy git --noconfirm 
 
 # get script
 
