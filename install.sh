@@ -14,3 +14,5 @@ pacman -Sy git --noconfirm
 
 git clone git://github.com/helmuthdu/aui
 
+cd aui
+./fifo
