@@ -1,5 +1,7 @@
 install gpd pocket
 
+install.sh https://git.io/fhGft
+
 first step
 ==========
 ```bash

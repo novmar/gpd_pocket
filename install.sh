@@ -12,7 +12,7 @@ pacman -Sy git --noconfirm
 
 # get script
 
-git clone git://github.com/helmuthdu/aui
+git clone git://github.com/novmar/aui
 
 cd aui
 ./fifo
