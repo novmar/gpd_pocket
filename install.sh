@@ -1,4 +1,4 @@
-$!/bin/bash
+#!/bin/bash
 # install script using  https://github.com/helmuthdu/aui
 
 
