@@ -1,5 +1,16 @@
 #!/bin/bash
 # install script using  https://github.com/helmuthdu/aui
+#rotate
+
+read -r -p "Rotate?" rotate
+case "$rotate" in 
+	[yY])
+	echo 3 >  /sys/class/graphics/fbcon/rotate_all
+	;;
+	*)
+	 echo not rotated
+		;;
+esac
 
 
 # first, resize cowspace patririon
